@@ -23,8 +23,8 @@ public class BallLib {
 	 * Returns a specific location which is in a given distance from a location and lying in specific angles
 	 * @param center - the returned location will be in a distance relative to this location
 	 * @param radius - distance
-	 * @param y_angle - angle among the y-axis and z-axis
-	 * @param xz_angle - angle among the x-axis and z-axis
+	 * @param y_angle - angle among the radius and x-axis (<b>will be used to get y</b>)
+	 * @param xz_angle - angle among the radius and x-axis (<b>will be used to get x and z</b>)
 	 * @return the location
 	 */
 	public static Location getBallLocation(Location center, double radius, double y_angle, double xz_angle) {
