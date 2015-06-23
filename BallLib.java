@@ -20,11 +20,11 @@ public class BallLib {
 	}
 	
 	/**
-	 * Returns locations which will create a circle with given center location, radius and parts
-	 * @param center - The center location of the circle
-	 * @param radius - The radius of the circle
-	 * @param parts - Number of parts (<b>the more parts, the better looking ball!</b>)
-	 * @return a list contains the ball locations
+	 * Returns locations which will create a ball with given center location, radius and parts
+	 * @param center - center location of the ball
+	 * @param radius - radius of the ball
+	 * @param parts - number of parts on the circle. (<b>the more parts, the better looking ball!</b>)
+	 * @return a list which contains the ball locations
 	 */
 	public static List<Location> getBallLocations(Location center, double radius, int parts) {
 		if (parts <= 0) {
@@ -56,9 +56,9 @@ public class BallLib {
 	/**
 	 * Returns a specific location which is in a given distance from a location and lying in specific angles
 	 * @param center - the returned location will be in a distance relative to this location
-	 * @param radius - the distance
-	 * @param y_angle - the angle among the y-axis and z-axis
-	 * @param xz_angle - the angle among the x-axis and z-axis
+	 * @param radius - distance
+	 * @param y_angle - angle among the y-axis and z-axis
+	 * @param xz_angle - angle among the x-axis and z-axis
 	 * @return the location
 	 */
 	public static Location getBallLocation(Location center, double radius, double y_angle, double xz_angle) {
